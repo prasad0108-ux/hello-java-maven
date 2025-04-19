@@ -1,5 +1,3 @@
----
-
 ```markdown
 <h1 align="center">🌟 Hello Java Maven + Jenkins CI Pipeline</h1>
 
