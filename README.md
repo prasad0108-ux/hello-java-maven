@@ -1,83 +1,58 @@
+---
+
 ```markdown
-<h1 align="center">🌟 Hello Java Maven + Jenkins CI Pipeline</h1>
+# ☕ Hello Java Maven CI with Jenkins
 
-<p align="center">
-  <strong>Simple yet powerful</strong> — a Java "Hello World" app built with Maven and powered by Jenkins Freestyle jobs.
-</p>
+Welcome to the Hello Java Maven project – a minimal Java "Hello, World" app built with Maven, integrated with Jenkins for CI/CD. Whether you're new to Jenkins or brushing up on Maven pipelines, this project is your quick and effective playground!
 
-<p align="center">
-  🚀 CI/CD Ready &nbsp; • &nbsp; 💡 Beginner-Friendly &nbsp; • &nbsp; 🔧 Maven + Jenkins
-</p>
+## 🌟 Features
 
----
+- Java Hello World App (`HelloWorld.java`)
+- Maven Build (`pom.xml`)
+- Jenkins Freestyle Project Support (`config.xml`)
+- Minimal setup – ideal for CI/CD practice
 
-## 📌 What’s Inside?
+## 🚀 Quick Start
 
-Welcome to a minimalist Java Maven project designed to demonstrate:
+Clone this repository to your local machine:
 
-- ✅ A basic Java app (`HelloWorld.java`)
-- 🛠️ A Maven-based build system (`pom.xml`)
-- ⚙️ A Jenkins Freestyle CI job (`config.xml`)
-- 🎯 GitHub integration with the **`main`** branch for continuous builds
-
-Whether you're just getting started with Jenkins or setting up your first CI job — this project is your launchpad 🚀
-
----
-
-## 🧪 Jenkins CI Workflow
-
-This project is built using a Jenkins **Freestyle job** that performs the following steps:
-
-1. **Clones** this repository from the `main` branch
-2. **Builds** the app using `mvn clean package`
-3. **Displays** build logs in Jenkins console output
-
-The Jenkins job configuration is stored in `config.xml` — importable or editable directly if you're managing Jenkins with code or Docker volumes.
-
----
-
-## 📂 Key Files
-
-| File                     | Description                             |
-|--------------------------|-----------------------------------------|
-| `HelloWorld.java`        | Basic Java class with a main method     |
-| `pom.xml`                | Maven configuration for dependencies & build |
-| `config.xml`             | Jenkins Freestyle job definition (XML)  |
-
-> All files are committed to the **`main`** branch for clean CI operations.
-
----
-
-🚀 Quick Start (for Jenkins Users)
-
-1. Clone the repo:
-   git clone https://github.com/prasad0108-ux/hello-java-maven.git
-   cd hello-java-maven
-   
-2. Create a Freestyle Jenkins job:
-   - Source Code Management → Git
-   - Repo URL: `https://github.com/prasad0108-ux/hello-java-maven.git`
-   - Branch: `main`
-   - Build → Add: `Invoke top-level Maven targets`
-     - Goals: `clean package`
-
-3. Save and click **Build Now**
-
-✅ Done! Check the Jenkins console for real-time build logs.
-
----
-
-## 💬 Final Thoughts
-
-This project is intentionally lightweight — to get you up and running with Jenkins and Maven as fast as possible. Tweak it, break it, automate it!
-
----
-
-> _“Code once, automate forever.”_
-
-<p align="center">
-  ⭐ Star this repo if you found it useful — or fork it to make it your own!
-</p>
+```bash
+git clone https://github.com/prasad0108-ux/hello-java-maven.git
+cd hello-java-maven
 ```
 
+Then:
+
+1. Create a **Freestyle Jenkins Job** in your Jenkins dashboard.
+2. In the job config, go to **Source Code Management** → Git:
+   - Repository URL: `https://github.com/prasad0108-ux/hello-java-maven.git`
+   - Branch to build: `main`
+3. Under **Build**, add step **Invoke top-level Maven targets** with:
+   - Goals: `clean package`
+4. Save and click **Build Now**
+5. Check the **Console Output** to see the Maven build in action!
+
+## 🗂️ Project Structure
+
+```
+hello-java-maven/
+├── src/
+│   └── main/
+│       └── java/
+│           └── HelloWorld.java
+├── pom.xml
+└── config.xml
+```
+
+## 🛠 Requirements
+
+- Java JDK
+- Apache Maven
+- Jenkins (running via Docker or natively)
+
+## 🤝 Contributions
+
+Feel free to fork, experiment, and raise PRs for improvements!
+
 ---
+```
