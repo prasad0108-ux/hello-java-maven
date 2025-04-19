@@ -1,5 +1,3 @@
----
-
 ```markdown
 # ☕ Hello Java Maven CI with Jenkins
 
