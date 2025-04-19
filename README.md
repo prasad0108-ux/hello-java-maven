@@ -48,14 +48,12 @@ The Jenkins job configuration is stored in `config.xml` — importable or editab
 
 ---
 
-## 🚀 Quick Start (for Jenkins Users)
+🚀 Quick Start (for Jenkins Users)
 
 1. Clone the repo:
-   ```bash
    git clone https://github.com/prasad0108-ux/hello-java-maven.git
    cd hello-java-maven
-   ```
-
+   
 2. Create a Freestyle Jenkins job:
    - Source Code Management → Git
    - Repo URL: `https://github.com/prasad0108-ux/hello-java-maven.git`
